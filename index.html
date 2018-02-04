@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel=stylesheet href ="style.css"> 
+        <title>DayPath (alpha!)</title>
+        
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <div class = "welcome"><p>Welcome to DayPath</p></div>
+        
+        <div class="content">
+            <div class = "form">Enter your stuff to do:
+                <div id="fixedTasks">
+                    <p>Fixed Tasks <button onclick = "addFixedTask('fixedTasks')">+</button></p>
+                </div>
+                <div id="anytimeTasks">
+                    <p>Any Time Tasks <button onclick = "addAnytimeTask('anytimeTasks')">+</button></p>
+                </div>
+                <div id="fillTasks">
+                    <p>Filler Tasks <button onclick = "addFillTask('fillTasks')">+</button></p>
+                </div> 
+                <div id = "myDay">
+                    <p>My day starts at: <input type = 'text' id = "dayStart" placeholder = "9:00"> </p>
+                </div>
+                <br>
+                <button id = submitButton onclick="submitForm()">Create my path</button>
+            </div> <!--form-->
+            
+            <div id = "result">
+                
+            </div>
+            
+        </div> <!--content-->
+    </body>
+</html>
